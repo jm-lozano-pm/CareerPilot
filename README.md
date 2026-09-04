@@ -1,252 +1,402 @@
-<div align="center">
+# CareerPilot — AI Product Management Case Study
 
 ![CareerPilot — AI-assisted job-search decision support](docs/assets/hero.png)
 
-# CareerPilot
+![Product Management](https://img.shields.io/badge/Product%20Management-6C3CE9?style=for-the-badge)
+![User Research](https://img.shields.io/badge/User%20Research-0EA5E9?style=for-the-badge)
+![AI Product](https://img.shields.io/badge/AI%20Product-2563EB?style=for-the-badge)
+![MVP](https://img.shields.io/badge/MVP-00C853?style=for-the-badge)
+![Responsible AI](https://img.shields.io/badge/Responsible%20AI-7C3AED?style=for-the-badge)
+![Product Metrics](https://img.shields.io/badge/Product%20Metrics-FF9800?style=for-the-badge)
 
-### AI-assisted job-search decision support for active job seekers
+An AI-assisted job-search workspace designed to help active job seekers turn opportunities, applications, and outcomes into better-informed decisions. This project was developed as part of the **Ironhack AI Product Manager Bootcamp**.
 
-CareerPilot connects career context, CVs, opportunities, applications, outcomes, and cautious AI guidance—helping job seekers decide where to invest effort and what to do next.
+> **CareerPilot identifies possibilities; the job seeker decides.**
 
-**CareerPilot identifies possibilities; the job seeker decides.**
+📄 **Quick Links:** [Product Requirements Document](docs/PRD.md) • [User Research](docs/User%20Insight%20Artifact.md) • [Slide Presentation](docs/Presentation.pdf) • [Responsible AI Statement](docs/AI%20Responsibility%20Statement.md)
 
-![Ironhack](https://img.shields.io/badge/Ironhack-AI%20Product%20Manager-2D2B55?style=flat-square)
-![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=111827)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![TanStack Start](https://img.shields.io/badge/TanStack-Start-FF4154?style=flat-square)
-![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3FCF8E?style=flat-square&logo=supabase&logoColor=white)
-![Responsible AI](https://img.shields.io/badge/Responsible%20AI-Human--in--the--loop-7C3AED?style=flat-square)
+## 📑 Table of Contents
 
-[Explore the MVP](#mvp-scope) · [Presentation](docs/Presentation.pdf) · [PRD](docs/PRD.md) · [User Research](docs/User%20Insight%20Artifact.md) · [Responsible AI](docs/AI%20Responsibility%20Statement.md)
+- [🚀 Project Overview](#-project-overview)
+- [🎯 Problem Statement](#-problem-statement)
+- [💡 Proposed Solution](#-proposed-solution)
+- [🔎 Research & Key Insights](#-research--key-insights)
+- [👤 Target Users](#-target-users)
+- [🧱 MVP Scope](#-mvp-scope)
+- [📊 Success Metrics](#-success-metrics)
+- [🎨 Product Experience](#-product-experience)
+- [🤖 Responsible AI](#-responsible-ai)
+- [📈 Monitoring & Event Tracking](#-monitoring--event-tracking)
+- [🎨 Slide Presentation](#-slide-presentation)
+- [📄 Project Deliverables](#-project-deliverables)
+- [🛠 Product Management Skills Demonstrated](#-product-management-skills-demonstrated)
+- [🧰 Tools Used](#-tools-used)
+- [📸 Project Preview](#-project-preview)
+- [📚 About this Project](#-about-this-project)
+- [💭 Reflection](#-reflection)
+- [👥 Team](#-team)
 
-*Ironhack AI Product Manager Final Project · 10-day capstone delivery window*
+## 🚀 Project Overview
 
-</div>
+CareerPilot is an AI-assisted career-management workspace for active job seekers managing several opportunities at once. It connects professional context, career goals, multiple CVs, saved jobs, applications, outcomes, factual metrics, and cautious AI guidance in one experience.
 
-## Table of Contents
+The core workflow is:
 
-- [Project Overview](#project-overview)
-- [Problem & Opportunity](#problem--opportunity)
-- [Research & Key Insights](#research--key-insights)
-- [Product Strategy & Core Workflow](#product-strategy--core-workflow)
-- [MVP Scope](#mvp-scope)
-- [AI Decision Support](#ai-decision-support)
-- [Responsible AI](#responsible-ai)
-- [Success Metrics](#success-metrics)
-- [Monitoring & Event Tracking](#monitoring--event-tracking)
-- [Product & Technical Architecture](#product--technical-architecture)
-- [Product Documentation](#product-documentation)
-- [Tools & Technology](#tools--technology)
-- [Product Management Skills](#product-management-skills)
-- [Reflection](#reflection)
-- [About](#about)
-- [Team](#team)
+> **Profile & Goals → Opportunities → Application Decisions → Progress & Outcomes → Insights → Next Actions**
 
-## Project Overview
+CareerPilot is deliberately not a job board, recruiter platform, or autonomous application agent. It focuses on a more specific product question:
 
-CareerPilot is a web-based job-search support product for active job seekers managing several opportunities at once. It combines a professional profile, career goals, multiple CVs, saved jobs, application tracking, outcome records, a factual dashboard, and AI-assisted recommendations in one connected workspace.
+> **How might we help active job seekers turn the information generated during their search into confident decisions about where to invest effort and what to do next?**
 
-It is deliberately not a job board, recruiter platform, or autonomous application agent. Its differentiated hypothesis is that job seekers may need more help turning job-search information into better-informed decisions—not simply another place to store it.
+The product is designed around a clear principle:
 
-The capstone covers the complete PM journey: discovery, research, competitive analysis, product definition, prioritisation, backlog design, measurement, Responsible AI, implementation, and monitoring design.
+> **CareerPilot identifies possibilities; the job seeker decides.**
 
-## Problem & Opportunity
+## 🎯 Problem Statement
 
-Active job seekers make repeated decisions with incomplete feedback:
+Active job seekers make repeated decisions with incomplete feedback. They may need to decide:
 
-- Is this imperfect-fit opportunity worth pursuing?
-- How much tailoring effort does this application justify?
-- What do recent applications and outcomes suggest might deserve attention?
-- Where should effort go next?
+- Whether an imperfect-fit opportunity is worth pursuing
+- How much tailoring effort an application justifies
+- What recent applications and outcomes might suggest
+- Which parts of their approach deserve attention
+- Where to focus their effort next
 
-CareerPilot began as a broader CV-builder and tracker concept. Research weakened both as primary differentiators: mature products already serve those needs, while user behaviour varied. The stronger directional signal was feedback and actionability—the gap between recording activity and interpreting it responsibly.
+CareerPilot began as a broader CV-builder and application-tracker concept. Research weakened both as primary differentiators: established products already provide substantial CV and tracking functionality, while user behaviour varies significantly.
 
-**Refined hypothesis:** Active job seekers may struggle to turn information from their job search into confident decisions about which opportunities deserve effort and what they should change based on application outcomes.
+### The opportunity
 
-This is a hypothesis to validate, not a proven market-wide problem.
+The stronger directional signal was not simply a need for more information. It was the gap between **recording job-search activity** and **interpreting it responsibly enough to support a useful next decision**.
 
-## Research & Key Insights
+The refined problem hypothesis is:
 
-Discovery combined a structured survey with **5 respondents**, secondary research using **6 BLS and NBER sources**, a self-conducted think-aloud exploration of FlowCV, Huntr, and Teal, plus analysis of manual alternatives such as spreadsheets, Notion, email, and memory.
+> Active job seekers may struggle to turn information from their job search into confident decisions about which opportunities deserve effort and what they should change based on application outcomes.
 
-1. **Outcome visibility showed the clearest signal.** Four of five respondents did not clearly know which parts of their search worked best; four also reported changing strategy based on results.
+This remains an evidence-informed hypothesis to validate, not a proven market-wide problem.
+
+## 💡 Proposed Solution
+
+CareerPilot brings the key parts of an active job search into one connected workspace and uses AI as a cautious decision-support layer.
+
+The product helps users:
+
+- Create and maintain professional context and career goals
+- Manage several CVs for different types of opportunities
+- Save jobs and separately record real applications
+- Track progress from Saved to Applied, Interview, Offer, Rejected, Withdrawn, or Closed
+- Record outcomes and explicit employer feedback when it exists
+- Review factual activity and outcome metrics
+- Compare a selected CV with a saved opportunity
+- Create a reviewable, job-specific CV copy without changing the original
+- Consider contextual insights and possible next actions
+- Review, dismiss, and rate recommendations
+
+The AI does not make the final decision. It provides an evidence-grounded first perspective that the job seeker can question, correct, dismiss, or act on.
+
+## 🔎 Research & Key Insights
+
+Discovery combined:
+
+- A structured user survey with **5 respondents**
+- Secondary research using **6 BLS and NBER sources**
+- A self-conducted think-aloud exploration of FlowCV, Huntr, and Teal
+- Competitive analysis and review of manual alternatives such as spreadsheets, Notion, email, bookmarks, and memory
+
+### Key insights
+
+1. **Outcome visibility showed the clearest signal.** Four of five respondents did not clearly know which parts of their job search worked best; four also reported changing strategy based on results.
 2. **Rejection creates an information need, not reliable causal evidence.** Four of five wanted to understand why they were rejected, but CareerPilot cannot infer an employer's true reason without explicit evidence.
-3. **Job-fit decisions are trade-offs.** People may apply without meeting every requirement, so the useful question is often whether the opportunity merits the effort—not a binary verdict.
-4. **Tailoring is relevant but not universal.** Behaviours ranged from reusing one CV to making small changes or using AI tools.
+3. **Job-fit decisions are trade-offs.** People may apply without meeting every requirement, so the useful question is often whether an opportunity merits the effort—not a binary qualified/unqualified verdict.
+4. **Tailoring is relevant but not universal.** Reported behaviours ranged from reusing one CV to making small changes or using AI tools.
 5. **Tracking is an enabler, not validated differentiation.** Respondents used memory, spreadsheets, job-board tools, or no tracker, while established competitors already offer mature tracking.
 
 ### Research limitations
 
-The sample was small (n=5), convenience-based, and self-reported. No qualitative user interviews were completed. Competitor think-aloud observations were conducted by the project owner rather than independent usability participants. Secondary sources provide context but do not prove demand for CareerPilot. Pain severity, trust, data sufficiency, actionability, segment fit, willingness to pay, and behavioural impact all require further validation.
+The evidence is directional. The survey sample was small (n=5), convenience-based, and self-reported. No qualitative user interviews were completed. Competitor think-aloud observations were conducted by the project owner rather than independent usability participants. Secondary research provides broader context but does not prove demand for CareerPilot.
 
-Read the complete evidence base in the [User Insight Artifact](docs/User%20Insight%20Artifact.md).
+Pain severity, trust, data sufficiency, actionability, strongest user segment, willingness to pay, and behavioural impact all require further validation.
 
-## Product Strategy & Core Workflow
+🔗 [Read the complete User Insight Artifact](docs/User%20Insight%20Artifact.md)
 
-CareerPilot connects factual job-search context with cautious, user-controlled decision support.
+## 👤 Target Users
 
-    Profile & Goals
-          ↓
-    Multiple CVs → Saved Opportunity → Optional CV–Job Match / AI Tailoring
-                                          ↓
-                               Record an Application
-                                          ↓
-                      Applied → Interview → Offer
-                             ↘ Rejected / Withdrawn / Closed
-                                          ↓
-                     Dashboard, Insights & Recommended Actions
-                                          ↓
-                           Review · Dismiss · Give Feedback
+The current primary user is an **active job seeker applying to multiple positions simultaneously**.
 
-Saving a job and recording an application are separate actions. AI tailoring creates a new CV copy rather than overwriting the source. Recorded facts, explicit employer feedback, deterministic metrics, and AI interpretation remain distinguishable.
+### Working persona: Alex
 
-## MVP Scope
+Alex is a synthetic persona based on the current research evidence. The name and narrative are illustrative; the underlying behaviours and needs are research-grounded.
 
-The MVP is a focused web experience built to test the decision-support hypothesis within a 10-day delivery window.
+Alex wants to:
 
-### Included
+- Decide which opportunities are worth pursuing
+- Make confident choices when experience does not perfectly match a job
+- Understand what application outcomes may be indicating
+- Adjust the job-search strategy based on results
+- Spend time and effort where it is most likely to be useful
 
-- Secure account access and a private persistent workspace
-- Structured professional profile and career goals
-- Multiple named CVs with Classic, Modern, and Compact one-column templates
-- Per-CV visibility controls, preview, and PDF export
+The research does not yet establish a final segment by career stage, industry, seniority, or employment status. Further validation is required to identify where the problem is strongest.
+
+## 🧱 MVP Scope
+
+The MVP was intentionally focused on testing CareerPilot's connected decision-support experience within a **10-day capstone delivery window**.
+
+### Core decision-support capabilities
+
+- Contextual opportunity analysis
+- Transparent CV–Job Match Assessment
+- AI-assisted CV tailoring that creates a separate copy
+- Job-search insights based on recorded information
+- Potential next-action recommendations
+- Recommendation review, dismissal, and usefulness feedback
+- Clear uncertainty and insufficient-information states
+
+### Supporting product capabilities
+
+- Account access and a private workspace
+- Professional profile and career goals
+- Multiple named CVs with three fixed one-column templates
+- CV visibility controls, preview, and PDF export
 - Manual and user-reviewed URL-assisted job capture
-- Kanban application workflow with drag-and-drop and status-control fallback
+- Kanban application workflow
 - Separate application, progression, outcome, and employer-feedback records
 - Dashboard with factual metrics and cautious patterns
-- Contextual opportunity insights and a transparent CV–Job Match Assessment
-- User-initiated AI CV tailoring that creates a reviewable copy
-- Recommended actions with review, dismissal, and usefulness feedback
 
-### Out of scope
+### Intentionally out of scope
+
+The MVP does not attempt to provide:
 
 - A native job marketplace or job board
-- Recruiter and employer workflows
-- Autonomous applications or consequential career actions
-- Claims of employer ATS access, hiring probability, or guaranteed outcomes
+- Recruiter or employer workflows
+- Autonomous job applications
+- Automatic career decisions
+- Employer ATS access or hiring predictions
+- Guaranteed interview, offer, or employment outcomes
 - Advanced freeform CV design
 - Dedicated native mobile or desktop products
 
-Future possibilities include broader job integrations, advanced analytics, cover-letter support, a browser extension, and deeper CV customisation—but only where further evidence justifies them.
+This prioritisation follows one principle:
 
-## AI Decision Support
+> **Build the minimum connected experience needed to test whether CareerPilot can provide useful decision support.**
 
-CareerPilot uses the minimum relevant, user-controlled context for each task. Depending on the feature, that may include selected profile information, visible CV content, a job description, career goals, applications, recorded outcomes, and explicit employer feedback.
+## 📊 Success Metrics
 
-It can help users review opportunity trade-offs, compare a selected CV with a job, create a tailored CV copy from supported facts, identify cautious patterns, and consider possible next actions with their supporting context.
+The MVP measurement framework focuses on whether users reach, review, and find the differentiated decision-support experience useful.
 
-The CV–Job Match result is a CareerPilot document-to-job assessment—not an employer ATS score, eligibility verdict, interview probability, or hiring prediction. AI output is advisory and remains subject to user review.
+### Recommendation Usefulness Rate — North Star
 
-## Responsible AI
+**Target: ≥70%**, with feedback collected on at least 50% of reviewed recommendations.
 
-Responsible AI is part of the product definition, not a final compliance add-on.
+Helpful ratings ÷ all explicit Helpful + Not Helpful ratings.
 
-- **Human control:** no autonomous applications or career decisions.
-- **Evidence boundaries:** user facts, employer evidence, system calculations, and AI interpretations remain distinguishable.
-- **No invented explanations:** unknown rejection reasons stay unknown.
-- **No CV fabrication:** tailoring cannot invent experience, skills, qualifications, or achievements.
-- **Uncertainty by design:** sparse or contradictory context produces limitations, not forced conclusions.
-- **Data minimisation:** only task-relevant context is sent to the AI provider.
-- **No causal or hiring claims:** observed patterns do not prove CareerPilot caused an interview, offer, or job.
-- **Fail safely:** disable a capability from the validation build if a critical guardrail cannot be met.
+### Recommendation Review Rate
 
-Full principles and escalation rules: [AI Responsibility Statement](docs/AI%20Responsibility%20Statement.md).
+**Target: ≥60%**
 
-## Success Metrics
+Unique recommendations meaningfully reviewed ÷ eligible recommendations shown.
 
-The framework separates product usefulness from downstream hiring outcomes.
+### Recommendation Feedback Coverage
 
-| Metric | Role | Definition | MVP target |
-|---|---|---|---|
-| Recommendation Usefulness Rate | North Star | Helpful ratings ÷ all explicit ratings | ≥70%, with feedback on ≥50% of reviewed recommendations |
-| Recommendation Review Rate | Supporting | Unique recommendations reviewed ÷ eligible recommendations shown | ≥60% |
-| Recommendation Feedback Coverage | Supporting | Reviewed recommendations with feedback ÷ recommendations reviewed | ≥50% |
-| Context Readiness Rate | Supporting | Users with sufficient context ÷ relevant validation cohort | ≥70% |
-| Interview Rate | Downstream observation | Applications reaching Interview ÷ submitted applications | Establish baseline |
-| Offer Rate | Downstream observation | Applications resulting in Offer ÷ submitted applications | Establish baseline |
-| Time to Job | Long-term observation | Days from recorded search start to accepted job | Establish baseline |
+**Target: ≥50%**
 
-Activation is the first meaningful review of an eligible recommendation generated from sufficient context. Dashboard and monitoring values currently shown are **simulated demo data**, not real-user validation results.
+Reviewed recommendations receiving feedback ÷ unique recommendations reviewed.
 
-## Monitoring & Event Tracking
+### Context Readiness Rate
 
-The event model measures whether users reach the core decision-support loop:
+**Target: ≥70%**
 
-    Registered → Context Ready → Recommendation Shown → Recommendation Reviewed → Feedback Provided
-                                                                   ↘ Dismissed
+Users who complete enough relevant context for a meaningful recommendation ÷ the relevant validation cohort.
 
-Canonical signals cover account creation, context readiness, job and application activity, outcome recording, recommendation exposure/review, feedback, and dismissal.
+Interview Rate, Offer Rate, and Time to Job are tracked only as **downstream observational metrics**. They establish baselines; they are not outcomes CareerPilot can claim to cause or control.
 
-Events represent successful actions or derived states with internal identifiers and minimum necessary context. Dismissal remains separate from a Not Helpful rating, repeated views are de-duplicated, and raw CV, job-description, or AI-prompt content does not belong in analytics events.
+Current dashboard values are **simulated demo data**, not real-user validation results.
 
-[Read the event specification](docs/Event%20Tracking.md) · [Open the dashboard PDF](docs/Monitoring%20Dashboard%20.pdf)
+## 🎨 Product Experience
+
+The experience is designed around a connected, user-controlled workflow:
+
+1. Create professional context and career goals
+2. Create or choose a CV
+3. Save and review an opportunity
+4. Decide whether it deserves effort
+5. Record an application separately from saving the job
+6. Track progress and record factual outcomes
+7. Review dashboard patterns and AI-supported insights
+8. Examine the evidence and limitations behind a recommendation
+9. Dismiss it, rate it, or choose a next action
+
+The interface keeps four kinds of information distinct:
+
+- User-provided facts
+- Explicit employer feedback
+- Factual product metrics
+- AI-generated interpretation
+
+AI CV tailoring is reversible and non-destructive: it creates a new CV copy, preserves the original, and requires human review.
+
+## 🤖 Responsible AI
+
+Responsible AI was treated as part of the product design rather than a final compliance step.
+
+### Human-in-the-loop
+
+CareerPilot does not submit applications, decide whether someone should apply, or take consequential career actions on the user's behalf.
+
+### Evidence boundaries
+
+User facts, explicit employer evidence, factual calculations, and AI interpretation remain distinguishable. Unknown rejection reasons stay unknown.
+
+### Avoiding overconfidence
+
+The CV–Job Match result is a CareerPilot document-to-job assessment—not an employer ATS score, eligibility verdict, interview probability, or hiring prediction.
+
+### User control
+
+Users can review recommendations, correct the underlying information, dismiss suggestions, request another analysis, and provide usefulness feedback.
+
+### Data minimisation
+
+Only the minimum context needed for a specific feature should be used. Credentials, secrets, hidden CV content, another user's data, and unnecessary sensitive information are excluded.
+
+### Safe failure
+
+If a critical guardrail cannot be met, the affected capability should be disabled from the validation build rather than knowingly exposed.
+
+🔗 [Read the AI Responsibility Statement](docs/AI%20Responsibility%20Statement.md)
+
+## 📈 Monitoring & Event Tracking
+
+The measurement journey is:
+
+> **Registered → Context Ready → Recommendation Shown → Recommendation Reviewed → Feedback Provided**
+
+The tracking model covers account creation, context readiness, saved jobs, recorded applications, status changes, outcomes, recommendation exposure, meaningful review, feedback, and dismissal.
+
+Successful actions are counted only after they succeed. Repeated recommendation views are de-duplicated, dismissal remains separate from a Not Helpful rating, and personal narrative or raw CV content does not belong in analytics events.
+
+🔗 [Read the Event Tracking specification](docs/Event%20Tracking.md) • [Open the Monitoring Dashboard PDF](docs/Monitoring%20Dashboard%20.pdf)
 
 ![CareerPilot Monitoring Dashboard — simulated demo data](docs/assets/Monitoring%20Dashboard.png)
 
-## Product & Technical Architecture
+## 🎨 Slide Presentation
 
-    React / TanStack Start web experience
-                     ↓
-           Trusted backend / API layer
-              ↙                  ↘
-    Supabase PostgreSQL      External AI service
-    Auth + user-isolated     Minimum relevant context,
-    persistent records       validated structured output
+The complete product story is presented through a slide deck covering:
 
-The relational model preserves relationships among users, profiles, goals, independent CVs, source/tailored CV provenance, jobs, applications, status history, outcomes, match assessments, recommendations, dismissal state, and feedback. Saved jobs remain distinct from applications, and backend authorisation protects user-level isolation independently of frontend visibility.
+- Executive summary and problem opportunity
+- Research evidence and limitations
+- User insight and product direction
+- Competitive context
+- Core workflow and MVP scope
+- AI decision support and Responsible AI
+- Success metrics and monitoring
+- Product decisions, reflection, and next steps
 
-## Product Documentation
+### 🔗 Presentation
 
-| Artifact | Purpose |
-|---|---|
-| [PRD](docs/PRD.md) | Context, requirements, 37 stories, prioritisation, metrics, risks, privacy, Responsible AI, GTM, and roadmap |
-| [User Insight Artifact](docs/User%20Insight%20Artifact.md) | Methods, evidence, triangulation, insights, decisions, and limitations |
-| [AI Responsibility Statement](docs/AI%20Responsibility%20Statement.md) | Data boundaries, human control, failure modes, and escalation |
-| [AI Use Reflection](docs/AI%20Use%20Reflection.md) | AI acceleration, risks, and human review |
-| [Event Tracking](docs/Event%20Tracking.md) | Events, activation, KPIs, QA, and privacy boundaries |
-| [Monitoring Dashboard](docs/Monitoring%20Dashboard%20.pdf) | Simulated monitoring view |
-| [Final Presentation](docs/Presentation.pdf) | Capstone narrative and product story |
+[Open the CareerPilot Slide Presentation](docs/Presentation.pdf)
 
-## Tools & Technology
+## 📄 Project Deliverables
 
-**Product management:** ChatGPT for research support, synthesis, documentation, and KPI logic; Jira Product Discovery for idea-level prioritisation and roadmap; Jira Software for the delivery backlog; Confluence for approved prioritisation and documentation; Lovable for AI-assisted implementation.
+### Product Requirements Document
 
-**Implementation:** React 19, TypeScript, TanStack Start, Vite, Tailwind CSS, Radix UI, Supabase/PostgreSQL, TanStack Query, TanStack Router, dnd-kit, Recharts, Zod, and React Hook Form.
+[View the Product Requirements Document](docs/PRD.md)
 
-## Product Management Skills
+Defines the product context, problem, persona, Jobs-to-be-Done, scope, 37 user stories, prioritisation, metrics, risks, privacy, Responsible AI, go-to-market thinking, and roadmap.
 
-- Problem framing and hypothesis management
-- Primary and secondary research
-- Competitive analysis and evidence triangulation
-- Insight synthesis and decision logging
-- Persona and Jobs-to-be-Done definition
-- MVP scoping under time constraints
-- Requirements, stories, acceptance criteria, and backlog traceability
-- MoSCoW prioritisation and roadmap design
-- KPI hierarchy, activation, event tracking, and monitoring
-- Responsible AI, privacy, data minimisation, and human-in-the-loop design
-- AI-assisted prototyping with critical human review
+### User Insight Artifact
 
-## Reflection
+[View the User Insight Artifact](docs/User%20Insight%20Artifact.md)
 
-The most important product lesson was that research should be allowed to change the product. CareerPilot started with CV creation and tracking near the centre. The evidence did not support treating either as the primary problem, so the concept shifted toward the more uncertain—but potentially more differentiated—space between job-search information and decisions.
+Documents the research questions, methods, evidence base, competitive analysis, triangulation, insights, decisions, and limitations.
+
+### AI Responsibility Statement
+
+[View the AI Responsibility Statement](docs/AI%20Responsibility%20Statement.md)
+
+Defines data boundaries, human control, limitations, critical failure modes, escalation, and the role of AI during the project.
+
+### AI Use Reflection
+
+[View the AI Use Reflection](docs/AI%20Use%20Reflection.md)
+
+Explains where AI accelerated the work, where it introduced risk, and why evidence, judgement, and accountability remained human-owned.
+
+### Event Tracking & Monitoring
+
+[View Event Tracking](docs/Event%20Tracking.md) • [View the Monitoring Dashboard](docs/Monitoring%20Dashboard%20.pdf)
+
+Defines the validation funnel, activation event, product signals, metric formulas, data-quality rules, and responsible measurement boundaries.
+
+## 🛠 Product Management Skills Demonstrated
+
+This project demonstrates practical Product Management skills including:
+
+- Product Vision & Strategy
+- Problem Definition
+- Discovery & User Research
+- Secondary Research
+- Competitor Analysis
+- Evidence Triangulation
+- User Persona Development
+- Jobs-to-be-Done
+- MVP Definition
+- Feature Prioritisation
+- Requirements Definition
+- User Stories & Acceptance Criteria
+- Backlog Traceability
+- Product Metrics & Activation
+- Event Tracking & Monitoring
+- Responsible AI
+- Privacy & Data Minimisation
+- Product Roadmapping
+- Stakeholder Presentation
+- AI-assisted Prototyping
+
+## 🧰 Tools Used
+
+- **ChatGPT** — research support, synthesis, documentation, KPI logic, and critical review
+- **Jira Product Discovery** — product ideas, prioritisation, and roadmap
+- **Jira Software** — Epics, Stories, acceptance criteria, dependencies, and delivery planning
+- **Confluence** — prioritisation and product documentation
+- **Lovable** — AI-assisted MVP creation and iteration
+
+AI was used throughout the project to accelerate research support, synthesis, documentation, planning, and prototyping. Every material product decision remained subject to human review.
+
+## 📸 Project Preview
+
+The repository contains the main artefacts produced during the capstone:
+
+- Product Requirements Document
+- User Insight Artifact
+- AI Responsibility Statement
+- AI Use Reflection
+- Event Tracking specification
+- Monitoring Dashboard
+- Slide Presentation
+- Working MVP repository
+- CareerPilot hero and visual assets
+
+## 📚 About this Project
+
+CareerPilot was developed as a **solo school project during the Ironhack AI Product Manager Bootcamp**. The objective was to apply Product Management practices to a realistic AI product challenge—from problem discovery through research, product strategy, prioritisation, Responsible AI, MVP creation, and measurement design.
+
+The project is presented as an **MVP case study**, not as a commercially launched or statistically validated product. It does not claim production-scale analytics, proven hiring impact, or guaranteed career outcomes.
+
+## 💭 Reflection
+
+The most important lesson was that research should be allowed to change the product. CareerPilot started with CV creation and application tracking near the centre. The evidence did not support treating either as the primary problem, so the concept shifted toward the more uncertain—but potentially more differentiated—space between job-search information and decisions.
 
 AI was most effective as a speed and structure multiplier. It was most risky when polished output could be mistaken for evidence or settled judgement. Competitor assumptions needed correction, simulated data needed explicit labels, and limited research needed careful language.
 
-**Use AI to accelerate the work; keep evidence, judgement, and accountability human-owned.**
+The next step would be to validate CareerPilot with a broader and more diverse group of active job seekers, focusing on pain severity, trust, data sufficiency, recommendation usefulness, and whether the support changes real decisions.
 
-Read the full [AI Use Reflection](docs/AI%20Use%20Reflection.md).
+> **Use AI to accelerate the work; keep evidence, judgement, and accountability human-owned.**
 
-## About
+## 👥 Team
 
-CareerPilot is an AI Product Management capstone created for Ironhack. It demonstrates an end-to-end process: discovering and reframing a problem, translating evidence into decisions, defining and prioritising a responsible MVP, building a connected web experience, and designing measurement for its core hypothesis.
+This project was developed independently by:
 
-This repository is a portfolio case study and MVP implementation. It does not claim statistically representative validation, production-scale analytics, proven hiring impact, or guaranteed career outcomes.
+- **Jose Manuel Lozano** — Product strategy, research, scope, requirements, prioritisation, Responsible AI, measurement, MVP creation, and presentation • [GitHub](https://github.com/jm-lozano-pm)
 
-## Team
+---
 
-### Jose Manuel Lozano — Solo Product Manager & Builder
-
-Jose Manuel owned the complete project lifecycle: research, product strategy, scope, PRD, prioritisation, backlog, Responsible AI, measurement design, prototype implementation, and final presentation.
-
-[GitHub profile](https://github.com/jm-lozano-pm)
+**CareerPilot** · Better-informed job-search decisions.
