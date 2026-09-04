@@ -13,7 +13,7 @@ An AI-assisted job-search workspace designed to help active job seekers turn opp
 
 > **CareerPilot identifies possibilities; the job seeker decides.**
 
-📄 **Quick Links:** [Product Requirements Document](docs/PRD.md) • [User Research](docs/User%20Insight%20Artifact.md) • [Slide Presentation](docs/Presentation.pdf) • [Responsible AI Statement](docs/AI%20Responsibility%20Statement.md)
+📄 **Quick Links:** [Live MVP](https://my-career-flightplan.lovable.app) • [Product Requirements Document](docs/PRD.md) • [User Research](docs/User%20Insight%20Artifact.md) • [Slide Presentation](docs/Presentation.pdf) • [Responsible AI Statement](docs/AI%20Responsibility%20Statement.md)
 
 ## 📑 Table of Contents
 
@@ -395,8 +395,10 @@ The next step would be to validate CareerPilot with a broader and more diverse g
 
 This project was developed independently by:
 
-- **Jose Manuel Lozano** — Product strategy, research, scope, requirements, prioritisation, Responsible AI, measurement, MVP creation, and presentation • [GitHub](https://github.com/jm-lozano-pm)
+- **Jose Manuel Lozano** — [LinkedIn](https://www.linkedin.com/in/jose-manuel-lozano-barba/?locale=en-US) • [GitHub](https://github.com/jm-lozano-pm)
 
 ---
 
 **CareerPilot** · Better-informed job-search decisions.
+
+
