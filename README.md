@@ -395,7 +395,7 @@ The next step would be to validate CareerPilot with a broader and more diverse g
 
 This project was developed independently by:
 
-- **Jose Manuel Lozano** — [LinkedIn](https://www.linkedin.com/in/jose-manuel-lozano-barba/?locale=en-US) • [GitHub](https://github.com/jm-lozano-pm)
+- **Jose Manuel Lozano** — [LinkedIn](https://www.linkedin.com/in/jm-lozano/) • [GitHub](https://github.com/jm-lozano-pm)
 
 ---
 
