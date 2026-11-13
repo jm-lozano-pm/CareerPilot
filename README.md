@@ -13,7 +13,7 @@ An AI-assisted job-search workspace designed to help active job seekers turn opp
 
 > **CareerPilot identifies possibilities; the job seeker decides.**
 
-📄 **Quick Links:** [Live MVP](https://my-career-flightplan.lovable.app) • [Product Requirements Document](docs/PRD.md) • [User Research](docs/User%20Insight%20Artifact.md) • [Slide Presentation](docs/Presentation.pdf) • [Responsible AI Statement](docs/AI%20Responsibility%20Statement.md)
+📄 **Quick Links:** [Live MVP](https://my-career-flightplan.lovable.app) • [MVP walkthrough (video)](#-mvp-walkthrough) • [Product Requirements Document](docs/PRD.md) • [User Research](docs/User%20Insight%20Artifact.md) • [Slide Presentation](docs/Presentation.pdf) • [Responsible AI Statement](docs/AI%20Responsibility%20Statement.md)
 
 ## 📑 Table of Contents
 
@@ -211,6 +211,13 @@ Interview Rate, Offer Rate, and Time to Job are tracked only as **downstream obs
 Current dashboard values are **simulated demo data**, not real-user validation results.
 
 ## 🎨 Product Experience
+
+### 🎬 MVP walkthrough
+
+[![CareerPilot MVP walkthrough (click to watch)](docs/assets/careerpilot-walkthrough-poster.jpg)](docs/assets/careerpilot-walkthrough.mp4)
+
+*Recorded in the live MVP: jobs and CVs, an AI match assessment on request, a tailored CV copy that leaves the original untouched, and the application insights. About 80 seconds, no sound. [Watch the video](docs/assets/careerpilot-walkthrough.mp4).*
+
 
 The experience is designed around a connected, user-controlled workflow:
 
